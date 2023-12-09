@@ -1,0 +1,21 @@
+<script>
+const calculator = {
+    add: function (r, c) { return r + c;
+    }, subtract: function (r, c) 
+    { return r - c; },
+    multiply: function (r, c) 
+    { return r * c;
+    }, divide: function (r, c) {
+      try { if (c === 0) { throw new Error("Division by zero ay mali sorry");
+        } return r / c; } catch (error) { console.error(error.message);
+      }
+     },
+  };
+  console.log
+  ("Addition:", calculator.add(6, 4));
+  console.log
+  ("Subtraction:", calculator.subtract(50, 25));
+  console.log
+  ("Multiplication:", calculator.multiply(10, 5));
+  calculator.divide(10, 0); 
+</script>
